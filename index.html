@@ -13,6 +13,7 @@ Bölümlerin sayısını ve başlıkların hiyerarşisini belirleyin. <h1> etike
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Shop</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -21,19 +22,19 @@ Bölümlerin sayısını ve başlıkların hiyerarşisini belirleyin. <h1> etike
     <!--Naming Convention-->
 
     <header>
+        <div class="header-container">
         <div id="aside-header">
             <ul>
                 <li><a href="#">Youtube</a></li>
                 <li><a href="#">Instagram</a></li>
             </ul>
-
         </div>
 
         <div id="nav-container">
             <nav id="navbar">
                 <ul>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
                         <a href="#">Services And Prices</a>
@@ -48,29 +49,30 @@ Bölümlerin sayısını ve başlıkların hiyerarşisini belirleyin. <h1> etike
                         <a href="#">Why Us ?</a>
                     </li>
                 </ul>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
+                        </li>
+                        <li>
+                            <a class="book-services-button">BOOK A SERVİCE</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
-                </li>
-                <li>
-                    <button>BOOK A SERVİCE</button>
-                </li>
-            </ul>
-        </div>
-
+        
         <div id="header-content">
             <div>
-                <div>
-                    <hr>
-                    <p>A hair salon for men in Kyiv</p>
+                <div class="intro-container">
+                    <div class="intro-line"></div>
+                    <p class="intro-text">A hair salon for men in Kyiv</p>
                 </div>
-                <h1>BarberShop</h1>
-                <p>We are experts in trendy men's haircuts.
+                <h1 class="main-title">BarberShop</h1>
+                <p class="main-subtitle">We are experts in trendy men's haircuts.
                     We work quickly, carefully, and tastefully.</p>
             </div>
+        </div>
         </div>
     </header>
     

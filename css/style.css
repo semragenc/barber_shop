@@ -1,0 +1,84 @@
+#nav-container {
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+}
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+#navbar a:hover{
+    color: #ff6c00;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar li{
+    list-style-type: none;
+}
+.book-services-button{
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+    padding: 15px;
+    cursor: pointer; /*üzeine gelindiğinde farde el simgesi çıkıyor. Buton olduğunu anlamak içi*/
+}
+.header-container{
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    background-image: url(../images/background.png)
+}
+.main-titl{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+.main-subtitle{
+    font-size: 20px;
+    color: #9da4bd;
+}
+.intro-text{
+    font-size: 20px;
+    color: #9da4bd99;
+}
+.hr.intro-line{
+    width: 100px;
+}
+.intro-container{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    width: 400px;
+}
+.aside-header{
+    background-color: white;
+}
+.intro-line{
+    width: 100px;
+    height: 2px;
+    
+}
+#aside-header a{
+    color: white;
+    text-decoration: none;
+
+}
+#aside-header a:hover {
+    color: #ff6c00;
+    text-decoration: none;
+}
+#aside-header li{
+    list-style-type: none;
+}
