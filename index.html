@@ -12,6 +12,14 @@ Bölümlerin sayısını ve başlıkların hiyerarşisini belirleyin. <h1> etike
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <title>Barber Shop</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -23,47 +31,51 @@ Bölümlerin sayısını ve başlıkların hiyerarşisini belirleyin. <h1> etike
 
     <header>
         <div class="header-container">
-        <div id="aside-header">
-            <ul>
-                <li><a href="#">Youtube</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </div>
-
-        <div id="nav-container">
-            <nav id="navbar">
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services And Prices</a>
-                    </li>
-                    <li>
-                        <a href="#">Barbers</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Why Us ?</a>
-                    </li>
-                </ul>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
-                        </li>
-                        <li>
-                            <a class="book-services-button">BOOK A SERVİCE</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        
-        <div id="header-content">
-            <div>
+         <div id="aside-header">
+             <ul>
+                <li>
+                    <div class="vertical-line"></div>
+                </li>
+                 <li><a href="#">Youtube</a></li>
+                 <li><a href="#">İnstagram</a></li>
+             </ul>
+         </div>
+         <div id="header-content">
+             <div id="nav-container">
+                
+                <nav id="navbar">
+                    <div id="actions">
+                        <ul>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Services And Prices</a>
+                            </li>
+                            <li>
+                                <a href="#">Barbers</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Us ?</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="contacts-and-button">
+                        <ul>
+                            <li>
+                                <a href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
+                            </li>
+                            <li>
+                                <a class="book-services-button">BOOK A SERVİCE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+             </div>
+             <div class="header-intro-container">
                 <div class="intro-container">
                     <div class="intro-line"></div>
                     <p class="intro-text">A hair salon for men in Kyiv</p>
@@ -71,101 +83,102 @@ Bölümlerin sayısını ve başlıkların hiyerarşisini belirleyin. <h1> etike
                 <h1 class="main-title">BarberShop</h1>
                 <p class="main-subtitle">We are experts in trendy men's haircuts.
                     We work quickly, carefully, and tastefully.</p>
-            </div>
-        </div>
+             </div>
+         </div>
         </div>
     </header>
     
     <main>
         <div id="about">
-            <div id="about-image">
-
+            <div id="about-images">
+                <img width="270" height="445" src="./images/about-image-1.png" alt="about image one">
+                <img width="270" height="445" src="./images/about-image-2.png" alt="about image two">
             </div>
             <div id="about-text">
-                <div>
-                    <hr>
+                <div class="about-line-container">
+                    <div class="about-line"></div>
                     <h5>ABOUT</h5>
                 </div>
-                <h1>The Best Barbershop in Your City</h1>
-                <h4>If you want to add more confidence to your image, you are definitely in the right place.</h4>
-                <p>
+                <h1 class="about-title">The Best Barbershop in Your City</h1>
+                <h4 class="about-subtitle">If you want to add more confidence to your image, you are definitely in the right place.</h4>
+                <p class="about-description">
                     We are a team that never rests on its laurels and yearns for change.  And once you fall into the
                     hands of our master,
                     you will never be the same again. We are a team that is always on the same wavelength with clients.
                     Therefore, we are
                     always ready to improve everyone who comes to us!
                 </p>
-                <button>BOOK A SERVİCE</button>
+                <a class="book-a-service-outlined">BOOK A SERVİCE</a>
             </div>
         </div>
         <div id="services-and-prices">
+            <div id="services-intro-container">
+                <div class="services-intro-line"></div>
+                <h5 id="services-intro-title">Spend time in the company of the best craftsmen</h5>
+            </div>
             <div>
-                <hr>
-                <h5>Spend time in the company of the best craftsmen</h5>
+                <h1 id="services-and-prices-title">Services and Prices</h1>
             </div>
-            <div id="services-and-prices-title">
-                <h1>Services and Prices</h1>
-            </div>
-            <div id="card-container">
+            <div id="services-card-containers">
                 <div id="left-card">
-                    <ul>
+                    <ul class="table-list-items">
                         <li>
-                            <div>
+                            <div class="service-table-row">
                                 <p>Men's Haircut</p>
-                                <hr>
+                                <div class="service-table-content-seperate-line"></div>
                                 <p>from 300 UAH</p>
                             </div>
                         </li>
                         <li>
-                            <div>
+                            <div class="service-table-row">
                                 <p>Beard Trim</p>
-                                <hr>
+                                <div class="service-table-content-seperate-line"></div>
                                 <p>from 200 UAH</p>
                             </div>
                         </li>
                         <li>
-                            <div>
+                            <div class="service-table-row">
                                 <p>Mustache Trim</p>
-                                <hr>
+                                <div class="service-table-content-seperate-line"></div>
                                 <p>from 200 UAH</p>
                             </div>
                         </li>
                         <li>
-                            <div>
+                            <div class="service-table-row">
                                 <p>Straight Razor Shave</p>
-                                <hr>
+                                <div class="service-table-content-seperate-line"></div>
                                 <p>from 200 UAH</p>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div id="right-card">
-                    <ul>
+                    <ul class="table-list-items"> 
                         <li>
-                            <div>
+                            <div class="service-table-row">
                                 <p>Trainee Haircut</p>
-                                <hr>
+                                <div class="service-table-content-seperate-line"></div>
                                 <p>from 50 UAH</p>
                             </div>
                         </li>
                         <li>
-                            <div>
+                            <di class="service-table-row">
                                 <p>Buzz Cut</p>
-                                <hr>
+                                <div class="service-table-content-seperate-line"></div>
                                 <p>from 200 UAH</p>
-                            </div>
+                            </di>
                         </li>
                         <li>
-                            <div>
+                            <div class="service-table-row">
                                 <p>Kids Haircut</p>
-                                <hr>
+                                <div class="service-table-content-seperate-line"></div>
                                 <p>from 300 UAH</p>
                             </div>
                         </li>
                         <li>
-                            <div>
+                            <div class="service-table-row">
                                 <p>Gray Coverage</p>
-                                <hr>
+                                <div class="service-table-content-seperate-line"></div>
                                 <p>from 200 UAH</p>
                             </div>
                         </li>
