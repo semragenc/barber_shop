@@ -1,9 +1,20 @@
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/static/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("../assets/fonts/static/Raleway-Bold.ttf");
+}
+
 #nav-container {
     justify-content: space-between;
     background-color: transparent;
     color: white;
     padding: 10px;
-    width: 1000 px;
+    width: 1000px;
     flex-direction: row;
 }
 #navbar{
@@ -33,8 +44,9 @@
     color: white;
 }
 
-.book-services-button{
+.book-service-button{
     border: 1px solid #ff6c00;
+    color: white;
     border-radius: 25px;
     padding-top: 15px;
     padding-left: 15px;
@@ -97,6 +109,12 @@
     display: flex;
     transform: rotate(90deg);
 }
+#aside-header {
+    display: flex;
+}
+#aside-header ul {
+    display: flex;
+}
 
 #aside-header a{
     color: black;
@@ -147,9 +165,10 @@
 .about-title{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    line-height: 49p.31x;
+    line-height: 49.31px;
     letter-spacing: 5%;
-}.about-line{
+}
+.black-line{
     width: 60px;
     height: 2px;
     background-color: #303030;
@@ -220,14 +239,14 @@
 }
 
 .service-table-content-seperate-line {
-    width: 20%;
+    width: 60%;
     height: 2px;
     background-color: #9da4bd99;
 }
 
 .table-list-items{
     color: #9da4bd;
-        font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 .table-list-items li{
     list-style-type: none;
@@ -239,12 +258,87 @@
 }
 #services-card-containers{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     gap: 20px;
 }
-#left-card{
-    flex:1
+#left-card {
+    flex: 1;
+    background: linear-gradient(180deg,rgba(23, 26, 36, 1),rgba(23, 26, 36, 0.2));
+    padding: 20px;
 }
+
 #right-card {
-    flex: 1
+    flex: 1;
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    padding: 20px;
+}
+#book-service-button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.old-school-line-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#old-school-small-title{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+#old-school-title{
+    font-family: "Raleway-Bold";
+    font-weight: 700;
+    font-size: 42px;
+}
+#old-school-description{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555;
+}
+#why-us {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    gap: 20px;
+}
+.intoduction-card{
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    align-items: center;
+    margin: 20px;
+}
+
+.intoduction-card-title{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    color: #303030;
+    height: 20%;
+}
+.intoduction-card-description{
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    color: #555555;
+    font-weight: 600;
+}
+.why-us-column{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+}
+#introduction-down-card{
+    margin-top: 50px;
+}
+
+#intoduction-cards{
+    display: flex;
+    flex-direction: row;
 }
