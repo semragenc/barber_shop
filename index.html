@@ -228,94 +228,141 @@ Bölümlerin sayısını ve başlıkların hiyerarşisini belirleyin. <h1> etike
         </div>
         
         <div id="our-barbers">
-            <div>
-                <hr>
-                <p>for true connoisseurs of the atmosphere</p>
+            <div id="our-barbers-title-container">
+                <div id="our-barbers-line"></div>
+                <p id="our-barbers-title">for true connoisseurs of the atmosphere</p>
             </div>
-            <h1>Our Barbers</h1>
-            <div id="barber_list">
-                <div class="barber_card">
+            <h1 id="our-barbers-heading-title">Our Barbers</h1>
+            <div id="barber-list">
+                <div class="barber-card">
                     <img width="300px" src="./images/first_barber.png" alt="Birinci Berber">
-                    <h3>Jhon Smith</h3>
-                    <p>Master Barber</p>
+                    <h3 class="barber-card-name">Jhon Smith</h3>
+                    <p class="barber-card-job-title">Master Barber</p>
+                    <div class="social-media-accounts">
+                        <a class="social-media-button" href="#">
+                            <img src="./images/instagram.svg" alt="instagram">
+                        </a>
+                        <a class="social-media-button" href="#">
+                            <img src="./images/twitter.svg" alt="twitter">
+                        </a>
+                        <a class="social-media-button" href="#">
+                            <img src="./images/facebook.svg" alt="facebook">
+                        </a>
+                        <a class="social-media-button" href="#">
+                            <img src="./images/linkedin.svg" alt="linkedin">
+                        </a>
+                    </div>
                 
                 </div>
-                <div class="barber_card">
+                <div class="barber-card">
                     <img width="300px" src="./images/second_barber.png" alt="İkinci Berber">
-                    <h3>Michele Doe</h3>
-                    <p>Master Barber</p>
+                    <h3 class="barber-card-name">Michele Doe</h3>
+                    <p class="barber-card-job-title">Master Barber</p>
+                    <div class="social-media-accounts">
+                        <a class="social-media-button" href="#">
+                            <img src="./images/instagram.svg" alt="instagram">
+                        </a>
+                        <a class="social-media-button" href="#">
+                            <img src="./images/twitter.svg" alt="twitter">
+                        </a>
+                        <a class="social-media-button" href="#">
+                            <img src="./images/facebook.svg" alt="facebook">
+                        </a>
+                        <a class="social-media-button" href="#">
+                            <img src="./images/linkedin.svg" alt="linkedin">
+                        </a>
+                    </div>
                 
                 </div>
-                <div class="barber_card">
+                <div class="barber-card">
                     <img width="300px" src="./images/third_barber.png" alt="Üçüncü Berber">
-                    <h3>Alan Black</h3>
-                    <p>Master Barber</p>
+                    <h3 class="barber-card-name">Alan Black</h3>
+                    <p class="barber-card-job-title">Master Barber</p>
+                    <div class="social-media-accounts">
+                        <a class="social-media-button" href="#">
+                            <img src="./images/instagram.svg" alt="instagram">
+                        </a>
+                        <a class="social-media-button" href="#">
+                            <img src="./images/twitter.svg" alt="twitter">
+                        </a>
+                        <a class="social-media-button" href="#">
+                            <img src="./images/facebook.svg" alt="facebook">
+                        </a>
+                        <a class="social-media-button" href="#">
+                            <img src="./images/linkedin.svg" alt="linkedin">
+                        </a>
+                    </div>
                 
                 </div>
             </div>
 
         </div>
         <div id="galley">
-            <div>
-                <hr>
-                <p>In Latin, "barba" means "beard"</p>
+            <div style="margin-top: 50px;" class="about-line-container">
+                <div class="black-line"></div>
+                <p id="gallery-title">IN LATİN, "BARBA" MEANS "BEARD"</p>
             </div>
-            <div id="image">
-                <img width="300px" src="./images/gallery-1.png" alt="">
-                <img width="300px" src="./images/gallery-2.png" alt="">
-                <img width="300px" src="./images/gallery-3.png" alt="">
-                <img width="300px" src="./images/gallery-4.png" alt="">
+            <div id="images">
+                <img clas="gallery-image" src="./images/gallery-1.png" alt="">
+                <img clas="gallery-image" src="./images/gallery-2.png" alt="">
+                <img clas="gallery-image" src="./images/gallery-3.png" alt="">
+                <img clas="gallery-image" src="./images/gallery-4.png" alt="">
             </div>
         </div>
         <div id="contacts">
             <div id="contact-form">
-                <h1>Book a Service</h1>
-                <form action="/getUser" method="GET">
+                <h1 id="book-service-title">Book a Service</h1>
+                <form class="contact-form-inputs-button" action="/getUser" method="GET">
                     <!--ÖNEMLİ form hep kullanılır input için-->
                     <div>
-                        <input type="text" placeholder="Name*" required>
-                        <input type="text" placeholder="Phone*" required>
+                        <input class="input-container" type="text" placeholder="Name*" required>
+                        <input class="input-container" type="text" placeholder="Phone*" required>
                     </div>
                     <div>
-                        <input type="text" placeholder="Message*" required>
+                        <input class="input-container" type="text" placeholder="Message*" required>
                     </div>
-                    <button type="submit">Send</button>
+                    <div style="margin-top: 15px;">
+                        <a id="submit-button" href="">SEND</a>
+                    </div>
                 </form>
 
             </div>
             <div id="contact-information">
-                <h1>Contacts</h1>
-
-                <div>
-                    <img src="./images/location.svg" alt="location">
-                    <p>Main Street, 7A Kyiv, 08132</p>
+                <div class="contact-information-overlay">
+                    <h1 id="title-contacts">Contacts</h1>
+                
+                    <div class="contact-information-row">
+                        <img src="./images/location.svg" alt="location">
+                        <p class="contact-information-text">Main Street, 7A Kyiv, 08132</p>
+                    </div>
+                    <div class="contact-information-row">
+                        <img src="./images/phone.svg" alt="phone">
+                        <a class="contact-information-text" href="tel:+">+38 044 111 11 11</a>
+                    </div>
+                    <div class="contact-information-row">
+                        <img src="./images/message.svg" alt="message">
+                        <a id="contact-mail-address" href="mailto:">barbershop@email.com</a>
+                    </div>
+                
+                    <div style="display: flex; flex-direction: row; 
+                    align-items: center; gap: 20px; margin-top: 75px;">
+                        <div id="working-ours-line"></div>
+                        <p id="contact-working-hours-title">working hours</p>
+                    </div>
+                    <p class="contact-information-text">from 9:00 AM till 22:00 PM</p>
                 </div>
-                <div>
-                    <img src="./images/phone.svg" alt="phone">
-                    <a href="tel:+">+38 044 111 11 11</a>
-                </div>
-                <div>
-                    <img src="./images/message.svg" alt="message">
-                    <a href="mailto:">barbershop@email.com</a>
-                </div>
-
-                <div>
-                    <hr>
-                    <p>working hours</p>
-                </div>
-                <p>Daily from 9:00 AM till 22:00 PM</p>
             </div>
         </div>
 
     </main>
     <footer>
         <div>
-            <p>&copy Copyright 2022</p>
+            <p class="copyright-text">&copy Copyright 2022</p>
         </div>
-        <div>
-            <hr>
-            <a href="#">Instagram</a>
-            <a href="#">Youtube</a>
+        <div class="footer-social-media-accounts">
+            <div id="footer-social-media-line"></div>
+            <a class="social-media-links" href="#">Instagram</a>
+            <a class="social-media-links" href="#">Youtube</a>
         </div>
     </footer>
 </body>
